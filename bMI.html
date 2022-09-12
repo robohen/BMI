@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <div class="calculator-container">
+      <h1>BMI CALCULATOR</h1>
+      <p style="font-size: 26px">Height in meters:</p>
+      <input class="height-input-field" type="text" />
+      <p style="font-size: 26px">Weight in kilograms:</p>
+      <br />
+      <input class="weight-input-field" type="text" /><br />
+      <br />
+      <button class="calculate">Calculate</button>
+    </div>
+    <h3 class="result"></h3>
+    <p class="result-statement"></p>
+    <div>
+      <h3>BMI chart for adults</h3>
+      <p>
+        This is a graph of BMI categories based on the World Health Organization
+        data. <br />
+        Dashed lines represent subdivisions within a major categorization.
+      </p>
+      <table class="cinfoT" style="align-content: stretch">
+        <tbody>
+          <tr>
+            <td class="cinfoHd">Category</td>
+            <td class="cinfoHdL">BMI range - kg/m<sup>2</sup></td>
+          </tr>
+          <tr>
+            <td>Severe Thinness</td>
+            <td class="cinfoBodL">&lt; 16</td>
+          </tr>
+          <tr>
+            <td>Moderate Thinness</td>
+            <td class="cinfoBodL">16 - 17</td>
+          </tr>
+          <tr>
+            <td>Mild Thinness</td>
+            <td class="cinfoBodL">17 - 18.5</td>
+          </tr>
+
+          <tr>
+            <td>Normal</td>
+            <td class="cinfoBodL">18.5 - 25</td>
+          </tr>
+          <tr>
+            <td>Overweight</td>
+            <td class="cinfoBodL">25 - 30</td>
+          </tr>
+          <tr>
+            <td>Obese Class I</td>
+            <td class="cinfoBodL">30 - 35</td>
+          </tr>
+          <tr>
+            <td>Obese Class II</td>
+            <td class="cinfoBodL">35 - 40</td>
+          </tr>
+          <tr>
+            <td>Obese Class III</td>
+            <td class="cinfoBodL">&gt; 40</td>
+          </tr>
+        </tbody>
+      </table>
+      <img
+        src="https://d26tpo4cm8sb6k.cloudfront.net/img/bmi-chart.gif"
+        width="529"
+        height="441"
+      />
+    </div>
+    <script src="bMI.js"></script>
+  </body>
+</html>
